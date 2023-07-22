@@ -1,16 +1,26 @@
+using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class asteroid : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	public Rigidbody2D rb;
+	public SpriteRenderer sprite;
+	public bool is_special = false;
+	public float lifeTime = 10;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	public void launch(Vector3 destination)
+	{
+		if (is_special)
+			sprite.color = Color.green;
+			
+		rb.velocity = (Vector2)(destination - transform.position).normalized * Random.Range(2, 10);
+	}
+
+	public void Update()
+	{
+		lifeTime -= Time.deltaTime;
+		if (lifeTime < 0)
+			Destroy(this);
+	}
 }
