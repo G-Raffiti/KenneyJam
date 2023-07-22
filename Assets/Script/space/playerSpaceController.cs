@@ -17,7 +17,7 @@ public class playerSpaceController : MonoBehaviour, Space_control.ISpaceControlA
     public float normalspeed = 100.0f;
     public float maxSpeed = 100.0f;
 
-    private Space_control controls;
+    public Space_control controls;
 
     private void Awake()
     {
