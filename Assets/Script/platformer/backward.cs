@@ -8,7 +8,7 @@ public class backward : MonoBehaviour
 {
     public TilemapCollider2D collider;
     public playerPlatformController player;
-    private Collider2D player_collider; 
+    private Collider2D player_collider;
     public bool left = true;
 
     private void Start()
