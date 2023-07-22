@@ -1,55 +1,54 @@
 # KenneyJam
+Un vaisseau s'écrase dans ton jardin et tu vas voir ce qui se passe, 
+l'alien à bord clamse et le vaisseau redémarre en te prenant pour son nouveau propriétaire.
 
-un vaisseau s'ecrase dans ton jardin et tu vas voir ce qui ce passe,
-l'alien a bord clamse et le vaiseau redemare en te prenant pour son nouveau proprietaire.
+En touchant aux commandes du vaisseau, il décolle et fait un saut hyperspatial 
+qui te projette directement dans la zone d'attraction d'une première planète,
 
-en touchant aux commandes du vaisseau il decole et fait un saut hyper spacial qui te
-projete directement dans la zone d'attraction d'une premiere planette,
+PLANÈTE BLOCKS : 
+crash numéro 2, les sièges éjectables s'activent et cette fois-ci c'est toi 
+qui te retrouves sur une planète étrange et loin de ton nouveau vaisseau.
 
-PLANETE BLOCKS:
-crash numero 2:
-les siege ejectable s'active et cette fois c'est toi qui te retrouve sur une planette etrange 
-et loin de ton nouveau vaisseau
+En explorant la planète, tu trouves un JET-PACK (optionnel) et surtout 
+tu retrouves ton vaisseau ainsi qu'une note d'explication pour activer les contrôles terriens (WASD).
 
-en explorant la planette tu trouve un JET-PACK(optionnel) et surtout tu retrouve ton vaisseau
-ainsi qu'une note d'explication pour activer les controles terriens (WASD)
+Te voilà reparti pour de nouvelles aventures, bien que ton but soit de rentrer sur TERRE.
 
-te voila reparti pour de nouvelles aventures, bien que ton but soit de rentrer sur TERRE
+-- (A partir d'ici, le jeu peut se dérouler dans l'ordre ou non) --
 
-(a partir d'ici le jeu peu se derouler dans l'ordre ou non)
-une fois que tu es de nouveau dans l'espace ton radar pointe vers une PLANETE (random) proche:
+Une fois que tu es de nouveau dans l'espace, ton radar pointe vers une PLANÈTE (aléatoire) proche :
+Tu prends donc les commandes et arrives à destination :
 
-tu prend donc les commandes et arrive a destiation:
+PLANÈTE INDUSTRIELLE : 
+de nouveau, tu explores une planète inconnue et découvres la combinaison de runes 
+pour activer le détecteur de métal ionique. 
 
-PLANETE INDUSTRIELLE:
-de nouveau tu explore une planette inconue et decouvre la combinaison de rune pour activer 
-le detecteur de metal ionique.
-une fois le detecteur mis en marche certaine meteorite t'aparaitron de couleur verte d'autre de couleur rouge
+Une fois le détecteur mis en marche, certaines météorites t'apparaîtront en couleur verte, d'autres en couleur rouge.
 
-en cherchant bien tu peux trouver les commandes pour mieux maitriser le DASH-VAISSEAU
+En cherchant bien, tu peux trouver les commandes pour mieux maîtriser le DASH-VAISSEAU.
 
-si tu as le JET-PACK tu pourais aussi decouvrir lors de cette exploration que les sonds que tu entends
-dans le cockpit du vaisseau correspondent a une autre PLANETE
+Si tu as le JET-PACK, tu pourrais aussi découvrir lors de cette exploration 
+que les sons que tu entends dans le cockpit du vaisseau correspondent à une autre PLANÈTE.
 
+PLANÈTE CHAMPIGNON : sur cette planète, tu découvriras comment filtrer les sons qui proviennent de l'espace.
 
-PLANETE CHAMPIGNON:
-sur cette planete tu decouvriras comment filtrer les sonds qui proviennent de l'espace
+En cherchant bien, tu peux aussi débloquer le BOUCLIER-PERSONNEL 
+ainsi que les contrôles pour le BOUCLIER-VAISSEAU.
 
-en cherchant bien tu peux aussi debloquer le BOUCLIER-PERSONEL ainsi que les controles pour le BOUCLIER-VAISSEAU
+Si tu as le JET-PACK, tu pourrais aussi trouver l'ensemble des runes (3) pour déclencher le TP 
+(mais pas l'ordre dans lequel les activer).
 
-si tu as le JET-PACK tu pourais aussi trouver l'ensembles des runes(3) pour declancher le TP (mais pas l'ordre dans lequel les activer)
+PLANÈTE ICE : 
+sur cette planète, tu découvriras quelles runes décrivent la TERRE (2).
 
-PLANETE ICE: 
-sur cette planete tu decouvriras quelles runes decrive la TERRE(2)
+Si tu as le BOUCLIER de protection, tu pourrais découvrir que les météorites de couleur verte 
+sont en fait lancées par une autre PLANÈTE, les rouges sont simplement aléatoires.
 
-si tu as le BOUCLIER de protection tu pourais decouvrir que les meteorites de couleur vetre 
-sont en fait lancees par une autre PLANETE les rouges sont simplement random
+TERRE:
+Pour arriver sur TERRE, tu devras activer les runes dans l'ordre 
+(les 3 pour activer le TP + les 2 pour les coordonnées de la Terre) pour lancer le saut spatial.
 
-pour arriver sur TERRE:
-tu devras activer les runes dans l'ordre (les 3 pour activer le TP + les 2 pour les coordonees de la terre) pour lanser le saut spacial
-
-FELICITATION !!!
-tu es rentrer chez toi !
+FÉLICITATIONS !!! Tu es rentré chez toi !
 
 [TRELLO](https://trello.com/b/2LKUM2x1/kenney-jam)
 
