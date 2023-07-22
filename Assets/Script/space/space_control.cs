@@ -134,6 +134,34 @@ public partial class @Space_control: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Rebind"",
+            ""id"": ""6ccca45d-e483-49a2-9839-f9ea92cbeedd"",
+            ""actions"": [
+                {
+                    ""name"": ""New action"",
+                    ""type"": ""Button"",
+                    ""id"": ""098b48d6-5205-4e98-ae3c-2514d26cf48c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""688a6e6d-9d50-4169-afba-c3a79277a3d7"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""New action"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -143,6 +171,9 @@ public partial class @Space_control: IInputActionCollection2, IDisposable
         m_SpaceControl_Movement = m_SpaceControl.FindAction("Movement", throwIfNotFound: true);
         m_SpaceControl_Dash = m_SpaceControl.FindAction("Dash", throwIfNotFound: true);
         m_SpaceControl_Shield = m_SpaceControl.FindAction("Shield", throwIfNotFound: true);
+        // Rebind
+        m_Rebind = asset.FindActionMap("Rebind", throwIfNotFound: true);
+        m_Rebind_Newaction = m_Rebind.FindAction("New action", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -262,10 +293,60 @@ public partial class @Space_control: IInputActionCollection2, IDisposable
         }
     }
     public SpaceControlActions @SpaceControl => new SpaceControlActions(this);
+
+    // Rebind
+    private readonly InputActionMap m_Rebind;
+    private List<IRebindActions> m_RebindActionsCallbackInterfaces = new List<IRebindActions>();
+    private readonly InputAction m_Rebind_Newaction;
+    public struct RebindActions
+    {
+        private @Space_control m_Wrapper;
+        public RebindActions(@Space_control wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Newaction => m_Wrapper.m_Rebind_Newaction;
+        public InputActionMap Get() { return m_Wrapper.m_Rebind; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(RebindActions set) { return set.Get(); }
+        public void AddCallbacks(IRebindActions instance)
+        {
+            if (instance == null || m_Wrapper.m_RebindActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_RebindActionsCallbackInterfaces.Add(instance);
+            @Newaction.started += instance.OnNewaction;
+            @Newaction.performed += instance.OnNewaction;
+            @Newaction.canceled += instance.OnNewaction;
+        }
+
+        private void UnregisterCallbacks(IRebindActions instance)
+        {
+            @Newaction.started -= instance.OnNewaction;
+            @Newaction.performed -= instance.OnNewaction;
+            @Newaction.canceled -= instance.OnNewaction;
+        }
+
+        public void RemoveCallbacks(IRebindActions instance)
+        {
+            if (m_Wrapper.m_RebindActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IRebindActions instance)
+        {
+            foreach (var item in m_Wrapper.m_RebindActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_RebindActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public RebindActions @Rebind => new RebindActions(this);
     public interface ISpaceControlActions
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnDash(InputAction.CallbackContext context);
         void OnShield(InputAction.CallbackContext context);
+    }
+    public interface IRebindActions
+    {
+        void OnNewaction(InputAction.CallbackContext context);
     }
 }

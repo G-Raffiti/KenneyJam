@@ -472,7 +472,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56cef07f814e96cab673dc7958961be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputs: {fileID: 0}
 --- !u!1 &281240065
 GameObject:
   m_ObjectHideFlags: 0
@@ -4526,6 +4525,9 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7969539796885865741, guid: f51de9424307957cc91a37965f9997f1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1499345894}
     - targetCorrespondingSourceObject: {fileID: 4762049785112111415, guid: f51de9424307957cc91a37965f9997f1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 63374025}
@@ -4540,6 +4542,23 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7969539796885865741, guid: f51de9424307957cc91a37965f9997f1, type: 3}
   m_PrefabInstance: {fileID: 1499345888}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1499345894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499345890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c84af404ecc4810a8b25890a04228c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 0}
+  nameTxt: {fileID: 0}
+  dashAction: {fileID: 0}
+  startRebindingObject: {fileID: 0}
+  waitingForInputObject: {fileID: 0}
 --- !u!1 &1511094138
 GameObject:
   m_ObjectHideFlags: 0

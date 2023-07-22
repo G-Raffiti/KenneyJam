@@ -17,7 +17,7 @@ public class playerSpaceController : MonoBehaviour, Space_control.ISpaceControlA
     private float dashCDTimer = 0;
     public float normalspeed = 100.0f;
 
-    private Space_control controls;
+    public Space_control controls;
 
     private void Awake()
     {
