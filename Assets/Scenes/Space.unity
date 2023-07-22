@@ -283,10 +283,11 @@ MonoBehaviour:
   rb: {fileID: 24007669}
   moveSpeed: 100
   rotationSpeed: -50
-  dashTime: 0.2
+  dashTime: 3
   dashSpeed: 3
-  dashCDTime: 1
+  dashCDTime: 6
   normalspeed: 15
+  maxSpeed: 100
 --- !u!1 &32445439
 GameObject:
   m_ObjectHideFlags: 0
@@ -1272,7 +1273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 7881751793340052237, guid: 59774c822f55c3f4c92d05840c681e51, type: 3}
-  planete_asteroid: {fileID: 403656049}
+  planete_asteroid: {fileID: 2122645541}
   parent: {fileID: 656979699}
 --- !u!1 &755199193
 GameObject:
