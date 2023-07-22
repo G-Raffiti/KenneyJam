@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -28,6 +29,7 @@ public class playerSpaceController : MonoBehaviour, Space_control.ISpaceControlA
     void Start()
     {
         controls.Enable();
+        data.Instance.Load(gameObject);
     }
     
     void Update()
@@ -78,5 +80,12 @@ public class playerSpaceController : MonoBehaviour, Space_control.ISpaceControlA
     public void OnShield(InputAction.CallbackContext context)
     {
         //todo : shield
+    }
+
+    private void OnDestroy()
+    {
+        controls.SpaceControl
+            .RemoveCallbacks(this);
+        data.Instance.Save(gameObject);
     }
 }
