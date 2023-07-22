@@ -20,6 +20,6 @@ public class planete : MonoBehaviour
     void Update()
     {
         transform.Rotate(new Vector3(0,0,1), rotaionSpeedSelf * Time.deltaTime);
-        transform.RotateAround(pivotObject.transform.position, new Vector3(0,0,1), rotaionSpeed * Time.deltaTime);
+        transform.RotateAround(pivotObject.transform.position, new Vector3(0,0,1), rotaionSpeed * Time.deltaTime * 0.1f);
     }
 }
