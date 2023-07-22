@@ -1,7 +1,6 @@
 # KenneyJam
 
-idee:
-start => un vaisseau s'ecrase dans ton jardin et tu vas voir ce qui ce passe,
+un vaisseau s'ecrase dans ton jardin et tu vas voir ce qui ce passe,
 l'alien a bord clamse et le vaiseau redemare en te prenant pour son nouveau proprietaire.
 
 en touchant aux commandes du vaisseau il decole et fait un saut hyper spacial qui te
@@ -51,3 +50,10 @@ tu devras activer les runes dans l'ordre (les 3 pour activer le TP + les 2 pour 
 
 FELICITATION !!!
 tu es rentrer chez toi !
+
+[TRELLO](https://trello.com/b/2LKUM2x1/kenney-jam)
+
+[ASSETS](https://www.kenney.nl/assets)
+
+[JAM](https://itch.io/jam/kenney-jam-2023)
+
