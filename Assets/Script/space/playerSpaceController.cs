@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -78,6 +77,6 @@ public class playerSpaceController : MonoBehaviour, Space_control.ISpaceControlA
 
     public void OnShield(InputAction.CallbackContext context)
     {
-        throw new System.NotImplementedException();
+        //todo : shield
     }
 }
