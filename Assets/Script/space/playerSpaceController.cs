@@ -16,6 +16,7 @@ public class playerSpaceController : MonoBehaviour, Space_control.ISpaceControlA
     public float dashCDTime = 1.0f;
     private float dashCDTimer = 0;
     public float normalspeed = 100.0f;
+    public float maxSpeed = 100.0f;
 
     private Space_control controls;
 
@@ -37,7 +38,7 @@ public class playerSpaceController : MonoBehaviour, Space_control.ISpaceControlA
             dashTimer -= Time.deltaTime;
         else if (dashTimer < 0)
         {
-            moveSpeed = normalspeed;
+            maxSpeed = normalspeed;
             dashTimer = 0;
         }
         
@@ -52,7 +53,8 @@ public class playerSpaceController : MonoBehaviour, Space_control.ISpaceControlA
     {
         if (moveInput.y != 0)
         {
-            rb.velocity = (moveInput.y * moveSpeed) * transform.up;
+            moveSpeed = Mathf.Clamp(moveSpeed + moveInput.y, -maxSpeed, maxSpeed);
+            rb.velocity = (moveSpeed * transform.up);
         }
         rb.angularVelocity = moveInput.x * rotationSpeed;
     }
@@ -67,7 +69,8 @@ public class playerSpaceController : MonoBehaviour, Space_control.ISpaceControlA
             return;
         if (context.performed)
         {
-            moveSpeed *= dashSpeed;
+            maxSpeed *= dashSpeed;
+            moveSpeed = maxSpeed;
             dashTimer = dashTime;
             dashCDTimer = dashCDTime;
         }
