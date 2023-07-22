@@ -10,7 +10,8 @@ public class playerPlatformController : MonoBehaviour, Space_control.ISpaceContr
 
 	private float horizontal;
 	public float speed = 1f;
-	public float jumpingPower = 16f;
+	public float jumpingPower = 5f;
+	public float bumpingPower = 7f;
 	public bool isFacingRight = true;
 
 	private Space_control controls;
@@ -61,6 +62,11 @@ public class playerPlatformController : MonoBehaviour, Space_control.ISpaceContr
 	{
 		if (!has_control) return;
 		horizontal = context.ReadValue<Vector2>().x;
+		
+		if (context.ReadValue<Vector2>().y > 0)
+		{
+			OnDash(context);
+		}
 	}
 
 	public void OnDash(InputAction.CallbackContext context)
@@ -86,5 +92,10 @@ public class playerPlatformController : MonoBehaviour, Space_control.ISpaceContr
 	{
 		has_control = false;
 		horizontal = direction;
+	}
+
+	public void Bump()
+	{
+		rb.velocity = new Vector2(rb.velocity.x, bumpingPower);
 	}
 }
