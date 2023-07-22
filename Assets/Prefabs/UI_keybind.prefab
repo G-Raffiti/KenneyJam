@@ -2526,8 +2526,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 510.56036, y: 0.00052261}
-  m_SizeDelta: {x: 239.3194, y: 600}
+  m_AnchoredPosition: {x: 323.04214, y: 0.0000083447}
+  m_SizeDelta: {x: 245.2351, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8684128377233618430
 CanvasRenderer:
@@ -2604,8 +2604,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -124.20834, y: -301.69934}
-  m_SizeDelta: {x: 211.7321, y: 562.9734}
+  m_AnchoredPosition: {x: -367.6397, y: -300}
+  m_SizeDelta: {x: 209.07, y: 562.9734}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8050887720164583590
 CanvasRenderer:
@@ -3134,6 +3134,7 @@ GameObject:
   - component: {fileID: 1565915474571757642}
   - component: {fileID: 969009101155732815}
   - component: {fileID: 7760329890906892746}
+  - component: {fileID: 4580684840336781998}
   m_Layer: 5
   m_Name: UI_keybind
   m_TagString: Untagged
@@ -3225,6 +3226,21 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &4580684840336781998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7969539796885865741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c84af404ecc4810a8b25890a04228c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 0}
+  nameTxt: {fileID: 9132830159792744038}
+  dashAction: {fileID: 8225299199204524154, guid: ead44206cc16c66478e3f7b431023a44, type: 3}
 --- !u!1 &8045409459323854666
 GameObject:
   m_ObjectHideFlags: 0
@@ -3479,7 +3495,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7708833192044824488}
   m_HandleRect: {fileID: 5732593700268962494}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0.99999726
   m_Size: 0.9616902
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -4094,7 +4110,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1535843367253933533}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4580684840336781998}
+        m_TargetAssemblyTypeName: UIKeyBind, Assembly-CSharp
+        m_MethodName: StartRebiding
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8981775548616456055
 GameObject:
   m_ObjectHideFlags: 0

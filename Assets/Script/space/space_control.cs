@@ -57,7 +57,7 @@ public partial class @Space_control: IInputActionCollection2, IDisposable
             ],
             ""bindings"": [
                 {
-                    ""name"": ""2D Vector"",
+                    ""name"": ""arrows"",
                     ""id"": ""65fd6693-0ee7-42bc-b676-cfe2a8298ae0"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
@@ -164,7 +164,24 @@ public partial class @Space_control: IInputActionCollection2, IDisposable
             ]
         }
     ],
-    ""controlSchemes"": []
+    ""controlSchemes"": [
+        {
+            ""name"": ""New control scheme"",
+            ""bindingGroup"": ""New control scheme"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Keyboard>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                },
+                {
+                    ""devicePath"": ""<Mouse>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
+        }
+    ]
 }");
         // SpaceControl
         m_SpaceControl = asset.FindActionMap("SpaceControl", throwIfNotFound: true);
@@ -339,6 +356,15 @@ public partial class @Space_control: IInputActionCollection2, IDisposable
         }
     }
     public RebindActions @Rebind => new RebindActions(this);
+    private int m_NewcontrolschemeSchemeIndex = -1;
+    public InputControlScheme NewcontrolschemeScheme
+    {
+        get
+        {
+            if (m_NewcontrolschemeSchemeIndex == -1) m_NewcontrolschemeSchemeIndex = asset.FindControlSchemeIndex("New control scheme");
+            return asset.controlSchemes[m_NewcontrolschemeSchemeIndex];
+        }
+    }
     public interface ISpaceControlActions
     {
         void OnMovement(InputAction.CallbackContext context);
