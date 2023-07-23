@@ -5,8 +5,10 @@ using UnityEngine;
 public class ComicsPrompter :MonoBehaviour
 {
 	public TextMeshProUGUI text;
+	public GameObject image;
 	public void display(string _charater_reaction)
 	{
+		image.SetActive(true);
 		StartCoroutine(display_txt(_charater_reaction));
 	}
 
@@ -22,6 +24,6 @@ public class ComicsPrompter :MonoBehaviour
 			letters++;
 		}
 		yield return new WaitForSeconds(5f);
-		gameObject.SetActive(false);
+		image.SetActive(false);
 	}
 }

@@ -52,7 +52,7 @@ public class data : MonoBehaviour
     // save and load button state
     
     public float bg_music_volume = 1;
-    public float player_max_speed = 100;
+    public float player_max_speed = -100;
     public bool ping_visible = false;
     public float player_rot_speed = 25;
     public float camera_zoom = 7;
@@ -68,10 +68,10 @@ public class data : MonoBehaviour
 
     public void SaveRuneState(BtnHub _btn_hub)
     {
-        bg_music_volume = _btn_hub.bg_music == null ? 0.5f: _btn_hub.bg_music.volume;
+        bg_music_volume = _btn_hub.bg_music == null ? 0.8f: _btn_hub.bg_music.volume;
         player_max_speed = _btn_hub.player.maxSpeed;
         ping_visible = _btn_hub.ping.visible;
         player_rot_speed = _btn_hub.player.rotationSpeed;
-        camera_zoom = _btn_hub.camera.orthographicSize;
+        camera_zoom = _btn_hub.camera == null ? 7: _btn_hub.camera.orthographicSize;
     }
 }

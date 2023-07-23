@@ -25,7 +25,6 @@ public class RuneClueTrigger: MonoBehaviour
 	private IEnumerator display_com()
 	{
 		yield return new WaitForSeconds(2);
-		comText.gameObject.SetActive(true);
 		comText.display(charater_reaction);
 	}
 

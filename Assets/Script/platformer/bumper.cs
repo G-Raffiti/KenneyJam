@@ -6,11 +6,13 @@ using UnityEngine.Tilemaps;
 public class bumper : MonoBehaviour
 {
     public playerPlatformController player;
-
+    public AudioSource audio;
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player") {
             player.Bump();
+            audio.Play();
         }
     }
 	

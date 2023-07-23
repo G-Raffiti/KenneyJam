@@ -18,6 +18,8 @@ public class playerPlatformController : MonoBehaviour, Space_control.ISpaceContr
 	private Space_control controls;
 	public bool has_control = true;
 
+	public AudioSource audio;
+
 	private void Awake()
 	{
 		controls = new Space_control();
@@ -43,10 +45,14 @@ public class playerPlatformController : MonoBehaviour, Space_control.ISpaceContr
 
 	private void FixedUpdate()
 	{
+		if (IsGrounded() && rb.velocity.x != 0 && !audio.isPlaying)
+			audio.Play();
+		else
+			audio.Stop();
 		rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
 	}
 
-	private bool IsGrounded()
+	public bool IsGrounded()
 	{
 		return Physics2D.OverlapCircle(groundCheck.position, 0.1f, groundLayer);
 	}
