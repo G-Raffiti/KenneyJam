@@ -54,7 +54,7 @@ public class playerSpaceController : MonoBehaviour, Space_control.ISpaceControlA
     {
         if (moveInput.y != 0)
         {
-            moveSpeed = Mathf.Clamp(moveSpeed * moveInput.y, -maxSpeed, maxSpeed);
+            moveSpeed = Mathf.Clamp(moveSpeed + moveInput.y, -maxSpeed, maxSpeed);
             rb.velocity = (moveSpeed * transform.up);
         }
         rb.angularVelocity = moveInput.x * rotationSpeed;

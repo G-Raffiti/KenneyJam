@@ -12,10 +12,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Space.unity
     guid: fbf5a89678ea3fc40aa81f8a0751d47e
   - enabled: 1
+    path: Assets/Scenes/PlaneteNature.unity
+    guid: 199bbe09e17b0d7d781104c416ab5178
+  - enabled: 1
     path: Assets/Scenes/PlaneteIndus.unity
     guid: 00136de0a48bba7448cfc3d1cc0bda3f
-  - enabled: 1
-    path: Assets/Scenes/Village.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 2a5cfb8205c58ce1285ebeb1e7872374, type: 2}

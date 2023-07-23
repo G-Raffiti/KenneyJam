@@ -205,7 +205,7 @@ Transform:
   m_GameObject: {fileID: 24007664}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.9230672, w: -0.38463873}
-  m_LocalPosition: {x: 295.21, y: -212.28, z: 0}
+  m_LocalPosition: {x: 420.1, y: -15.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -282,13 +282,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 24007669}
-  moveSpeed: 0
+  moveSpeed: 70
   rotationSpeed: 50
   dashTime: 3
   dashSpeed: 3
   dashCDTime: 6
-  normalspeed: 70
-  maxSpeed: 70
+  normalspeed: 25
+  maxSpeed: 25
 --- !u!58 &24007671
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8806,6 +8806,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 24007670}
+    - target: {fileID: 371548746344386174, guid: 743d4a1a4980f5a4099c8a0f33bb3611, type: 3}
+      propertyPath: player_max_speed
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 371548746344386174, guid: 743d4a1a4980f5a4099c8a0f33bb3611, type: 3}
       propertyPath: player_rot_speed
       value: -100

@@ -26,6 +26,6 @@ public class MainMenu : MonoBehaviour
 			bg.color -= new Color(Time.deltaTime, Time.deltaTime, Time.deltaTime, 0f);
 			yield return new WaitForEndOfFrame();
 		}
-		SceneManager.LoadScene("Intro");
+		SceneManager.LoadScene("Space");
 	}
 }
