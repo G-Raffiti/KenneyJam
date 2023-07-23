@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PlaneteIndus.unity
     guid: 00136de0a48bba7448cfc3d1cc0bda3f
+  - enabled: 1
+    path: Assets/Scenes/PlaneteSnow.unity
+    guid: a55f56aeef1021f93882099d23063b2b
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 2a5cfb8205c58ce1285ebeb1e7872374, type: 2}
