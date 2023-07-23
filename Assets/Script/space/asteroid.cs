@@ -14,6 +14,10 @@ public class asteroid : MonoBehaviour
 	{
 		if (is_special)
 			sprite.color = Color.green;
+		else
+		{
+			sprite.color = new Color(0.6f, 0.4f, 0.25f);
+		}
 		transform.localScale *= Random.Range(0.8f, 3);
 		rb.velocity = (Vector2)(destination - transform.position).normalized * Random.Range(2, 10);
 	}

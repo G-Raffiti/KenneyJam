@@ -1494,7 +1494,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c04a3bc5eda73849931f173f9452307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: 0.8
 --- !u!1 &1160599118
 GameObject:
   m_ObjectHideFlags: 0
@@ -14832,6 +14831,10 @@ PrefabInstance:
     - target: {fileID: 6407318752771465972, guid: 0580583f518428d4ca4108e76c446e19, type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6407318752771465972, guid: 0580583f518428d4ca4108e76c446e19, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1.014
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

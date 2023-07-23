@@ -44,10 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e416491db449649415bd10ca513fc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  planetes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  runes: 
+  visited: []
+  bg_music_volume: 0.8
+  player_max_speed: 70
+  ping_visible: 1
+  player_rot_speed: 50
+  camera_zoom: 7

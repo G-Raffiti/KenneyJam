@@ -47,7 +47,7 @@ public class playerPlatformController : MonoBehaviour, Space_control.ISpaceContr
 	{
 		if (IsGrounded() && rb.velocity.x != 0 && !audio.isPlaying)
 			audio.Play();
-		else
+		else if (!IsGrounded() || rb.velocity.x == 0)
 			audio.Stop();
 		rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
 	}
