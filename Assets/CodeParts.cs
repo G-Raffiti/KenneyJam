@@ -7,11 +7,7 @@ public class CodeParts : MonoBehaviour
 {
     public static CodeParts Instance = null;
 
-
-
-    public runes[] codeParts =
-        { runes.none, runes.none, runes.none, runes.none };
-    
+    public List<runes> codeParts = new();
     
     void Awake()
     {
@@ -24,8 +20,8 @@ public class CodeParts : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void AddClue(int i, runes rune)
+    public void AddClue(runes rune)
     {
-        codeParts[i] = rune;
+        codeParts.Add(rune);
     }
 }

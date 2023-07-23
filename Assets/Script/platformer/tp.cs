@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
+using Random = UnityEngine.Random;
 
 public class tp : MonoBehaviour
 {
@@ -33,6 +35,7 @@ public class tp : MonoBehaviour
 	IEnumerator beem_anim()
 	{
 		yield return new WaitForSeconds(1.5f);
+		CodeParts.Instance.AddClue(data.Instance.runes[Random.Range(0, 12)]);
 		SceneManager.LoadScene("Space");
 	}
 }
