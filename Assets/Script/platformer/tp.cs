@@ -7,21 +7,25 @@ using UnityEngine.UIElements;
 public class tp : MonoBehaviour
 {
 	private GameObject player;
-	public GameObject beem;
+	private Rigidbody2D rb_player;
+	public SpriteRenderer beem;
 	private void OnTriggerEnter2D(Collider2D other)
 	{
 		if (!other.CompareTag("Player")) return;
-
-		beem.SetActive(true);
+		Debug.Log("end level triggered");
+		beem.enabled = true;
 		player = other.gameObject;
-		player.GetComponent<Rigidbody2D>().simulated = false;
+		rb_player = player.GetComponent<Rigidbody2D>();
+		rb_player.gravityScale = -0.2f;
+		rb_player.freezeRotation = false;
+		player.GetComponent<playerPlatformController>().has_control = false;
 		StartCoroutine(beem_anim());
 	}
 
 	private void Update()
 	{
 		if (player == null) return;
-		player.transform.position += Vector3.up * Time.deltaTime;
+		rb_player.velocity += Vector2.up * (Time.deltaTime * Time.deltaTime);
 	}
 
 	IEnumerator beem_anim()

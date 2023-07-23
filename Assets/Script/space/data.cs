@@ -4,11 +4,19 @@ using System.Resources;
 using UnityEngine;
 
 
+public enum runes
+{
+    sound_plus,
+    sound_minus,
+    speed_plus,
+    speed_minus,
+    radar_test,
+}
+
 public class data : MonoBehaviour
 {
     public static data Instance = null;
-    public playerSpaceController player;
-    public List<planete> planetes = new List<planete>();
+    public List<runes> runes;
 
     private Dictionary<string, Vector3> state = new Dictionary<string, Vector3>();
     private List<string> visited = new();
@@ -45,5 +53,10 @@ public class data : MonoBehaviour
     {
         if (!visited.Contains(_name))
             visited.Add(_name);
+    }
+
+    public void addRunes(List<runes> _runes)
+    {
+        runes.AddRange(_runes);
     }
 }

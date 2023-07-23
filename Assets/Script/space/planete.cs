@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -34,12 +33,12 @@ public class planete : MonoBehaviour
     {
         if (planete_scene_name == "")
             return;
+        data.Instance.SaveVisited(name);
         SceneManager.LoadScene(planete_scene_name);
     }
 
     private void OnDestroy()
     {
         data.Instance.Save(gameObject);
-        data.Instance.SaveVisited(name);
     }
 }
