@@ -1318,7 +1318,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e43b24a0330174e40a1272fc8e4ad941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collider: {fileID: 966938945}
   player: {fileID: 1986597928}
   left: 1
 --- !u!1 &1042459292
@@ -12997,7 +12996,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe3b7dad441e3dd5585175cf7d80823e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collider: {fileID: 0}
   player: {fileID: 1986597928}
 --- !u!19719996 &2061701893
 TilemapCollider2D:
@@ -13687,7 +13685,7 @@ PrefabInstance:
       objectReference: {fileID: 4738821324928736263}
     - target: {fileID: 4036609251553333966, guid: afdc25137c150f34990a7b6fa091be7e, type: 3}
       propertyPath: runes.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4036609251553333966, guid: afdc25137c150f34990a7b6fa091be7e, type: 3}
       propertyPath: charater_reaction
@@ -13695,6 +13693,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4036609251553333966, guid: afdc25137c150f34990a7b6fa091be7e, type: 3}
       propertyPath: runes.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4036609251553333966, guid: afdc25137c150f34990a7b6fa091be7e, type: 3}
+      propertyPath: runes.Array.data[2]
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5951828693304422031, guid: afdc25137c150f34990a7b6fa091be7e, type: 3}

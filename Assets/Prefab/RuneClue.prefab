@@ -165,6 +165,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rect: {fileID: 1478632577717942811}
+  icon_rune_A:
+  - {fileID: 5240030730091904923}
+  - {fileID: 2922695509194631541}
+  description_A: {fileID: 9061967625847959345}
+  icon_rune_B:
+  - {fileID: 3258453729591468710}
+  - {fileID: 7585885503954063134}
+  description_B: {fileID: 1241814162695301008}
+  icon_rune_C:
+  - {fileID: 8187559361857324905}
+  - {fileID: 4931666186193707866}
+  description_C: {fileID: 1378631579376621051}
 --- !u!1 &3980901673701931258
 GameObject:
   m_ObjectHideFlags: 0
@@ -460,7 +472,7 @@ GameObject:
   - component: {fileID: 7818142348512277353}
   - component: {fileID: 524611112862718144}
   m_Layer: 5
-  m_Name: GameObject (1)
+  m_Name: A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -659,7 +671,7 @@ GameObject:
   - component: {fileID: 7829083695597484257}
   - component: {fileID: 5267339304510379838}
   m_Layer: 5
-  m_Name: GameObject (2)
+  m_Name: B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -933,7 +945,7 @@ GameObject:
   - component: {fileID: 8842556534956592261}
   - component: {fileID: 3979483052498564757}
   m_Layer: 5
-  m_Name: GameObject (3)
+  m_Name: C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

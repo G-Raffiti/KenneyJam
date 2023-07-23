@@ -20,6 +20,7 @@ public enum runes
 	validate_rune_code,
 	rotation_speed_plus,
 	rotation_speed_minus,
+	activate_planetes,
 }
 
 public class BtnHub:MonoBehaviour
@@ -31,8 +32,8 @@ public class BtnHub:MonoBehaviour
 	public List<RuneButton> btns;
 
 	private bool code_mode = false;
-	private List<runes> code;
-	private List<runes> try_code;
+	public List<runes> code = new List<runes>();
+	private List<runes> try_code = new List<runes>();
 
 	[Header("Dependencies")]
 	public AudioSource bg_music;
@@ -42,14 +43,25 @@ public class BtnHub:MonoBehaviour
 
 	private void Start()
 	{
-		btns = FindObjectsByType<RuneButton>(FindObjectsSortMode.None).ToList();
+		//btns = FindObjectsByType<RuneButton>(FindObjectsSortMode.None).ToList();
 		int index = 0;
 		foreach (runes rune in Enum.GetValues(typeof(runes)))
 		{
-			btns[index].GetComponent<Image>().sprite = icons[index];
+			if (!data.Instance.runes_imgs.ContainsKey(rune))
+				data.Instance.runes_imgs.Add(rune, icons[index]);
+			btns[index].rune = rune;
+			btns[index].GetComponent<Image>().sprite = data.Instance.runes_imgs[rune];
 			btns[index].Bind(this, display, value);
 			index++;
 		}
+		
+		// if too much btns
+		for (; index < btns.Count; index++)
+		{
+			btns[index].GetComponent<Image>().sprite = icons[index];
+			btns[index].Bind(this, display, value);
+		}
+		
 		data.Instance.LoadRuneState(this);
 	}
 
@@ -67,6 +79,8 @@ public class BtnHub:MonoBehaviour
 				test_code();
 			return;
 		}
+
+		Debug.Log("activate " + ToStr(_rune));
 			
 		switch (_rune)
 		{
@@ -117,6 +131,9 @@ public class BtnHub:MonoBehaviour
 				player.rotationSpeed -= 2;
 				if (player.rotationSpeed < -70)
 					player.rotationSpeed = -70;
+				break;
+			case runes.activate_planetes:
+				data.Instance.visited.Clear();
 				break;
 			default:
 				return;

@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
+using System.Linq;
 using UnityEngine;
 
 public class RuneClueTrigger: MonoBehaviour
 {
 	public RuneClueUI UiRunePanel;
 	public ComicsPrompter comText;
-	public List<runes> runes = new List<runes>();
+	public runes[] runes = new runes[3];
 	public string charater_reaction;
 
 	private bool triggered = false;
@@ -16,11 +15,11 @@ public class RuneClueTrigger: MonoBehaviour
 		if (!other.CompareTag("Player")) return;
 		if (!triggered)
 		{
-			data.Instance.addRunes(runes);
+			data.Instance.addRunes(runes.ToList());
 			triggered = true;
 			StartCoroutine(display_com());
 		}
-		UiRunePanel.show();
+		UiRunePanel.show(runes[0], runes[1], runes[2]);
 	}
 
 	private IEnumerator display_com()

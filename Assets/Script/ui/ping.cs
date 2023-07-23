@@ -11,6 +11,7 @@ public class ping : MonoBehaviour
     private bool fade = true;
 
     public bool visible = false;
+    public Camera camera_ref;
     
     // Update is called once per frame
     void Update()
@@ -23,9 +24,9 @@ public class ping : MonoBehaviour
         direction = Rotate(direction, -rotation);
         float factor = 1;
         if (Math.Abs(direction.y) > Math.Abs(direction.x))
-            factor = 7 / Math.Abs(direction.y);
+            factor = camera_ref.orthographicSize / Math.Abs(direction.y);
         else
-            factor = 12 / Math.Abs(direction.x);
+            factor = (camera_ref.orthographicSize * 9) / Mathf.Max(0.05f,  16 * Math.Abs(direction.x));
         transform.localPosition = direction * factor;
 
         Color color = sprite.color;

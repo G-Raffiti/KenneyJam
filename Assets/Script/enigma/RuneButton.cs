@@ -2,9 +2,10 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class RuneButton: MonoBehaviour
+public class RuneButton: MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
 	public runes rune;
 	public Button btn;
@@ -17,11 +18,17 @@ public class RuneButton: MonoBehaviour
 		hub = _hub;
 		display = _display;
 		value = _value;
-		btn.onClick.AddListener(() => hub.ActiveRune(rune));
 	}
 
-	private void OnMouseEnter()
+	public void ActivateRune()
 	{
+		Debug.Log("activate " + BtnHub.ToStr(rune));
+		hub.ActiveRune(rune);
+	}
+
+	public void OnPointerEnter(PointerEventData eventData)
+	{
+		Debug.Log("mouse entered");
 		if (!data.Instance.runes.Contains(rune))
 		{
 			value.text = "????????????????";
@@ -34,11 +41,9 @@ public class RuneButton: MonoBehaviour
 		}
 	}
 
-	private void OnMouseExit()
+	public void OnPointerExit(PointerEventData eventData)
 	{
 		value.text = "";
 		display.text = "";
 	}
-	
-	
 }

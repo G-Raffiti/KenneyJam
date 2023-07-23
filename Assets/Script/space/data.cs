@@ -5,10 +5,11 @@ using UnityEngine;
 public class data : MonoBehaviour
 {
     public static data Instance = null;
-    public List<runes> runes;
+    public List<runes> runes = new List<runes>();
+    public Dictionary<runes, Sprite> runes_imgs = new();
 
     private Dictionary<string, Vector3> state = new Dictionary<string, Vector3>();
-    private List<string> visited = new();
+    public List<string> visited = new();
 
     private void Awake()
     {
@@ -34,8 +35,6 @@ public class data : MonoBehaviour
             return;
         if (state.ContainsKey(obj.name))
             obj.transform.position = state[obj.name];
-        if (visited.Contains(obj.name))
-            obj.GetComponent<Rigidbody2D>().simulated = false;
     }
 
     public void SaveVisited(string _name)
@@ -69,7 +68,7 @@ public class data : MonoBehaviour
 
     public void SaveRuneState(BtnHub _btn_hub)
     {
-        bg_music_volume = _btn_hub.bg_music.volume;
+        bg_music_volume = _btn_hub.bg_music == null ? 0.5f: _btn_hub.bg_music.volume;
         player_max_speed = _btn_hub.player.maxSpeed;
         ping_visible = _btn_hub.ping.visible;
         player_rot_speed = _btn_hub.player.rotationSpeed;
