@@ -6,6 +6,8 @@ public class data : MonoBehaviour
 {
     public static data Instance = null;
     public List<runes> runes = new List<runes>();
+
+    public List<runes> all_runes = new List<runes>() { global::runes.activate_planetes , global::runes.radar_switch, global::runes.rotation_speed_minus, global::runes.rotation_speed_plus, global::runes.sound_minus, global::runes.sound_plus, global::runes.speed_minus, global::runes.speed_plus, global::runes.start_rune_code, global::runes.validate_rune_code, global::runes.zoom_minus, global::runes.zoom_plus};
     public Dictionary<runes, Sprite> runes_imgs = new();
 
     private Dictionary<string, Vector3> state = new Dictionary<string, Vector3>();
