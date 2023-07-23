@@ -6,10 +6,12 @@ using UnityEngine.InputSystem;
 public class playerPlatformController : MonoBehaviour, Space_control.ISpaceControlActions
 {
 	public Rigidbody2D rb;
+	public Collider2D collider;
 	public Transform groundCheck;
 	public LayerMask groundLayer;
 
 	private float horizontal;
+	private float vertical;
 	public float speed = 1f;
 	public float jumpingPower = 5f;
 	public float bumpingPower = 7f;
@@ -17,6 +19,7 @@ public class playerPlatformController : MonoBehaviour, Space_control.ISpaceContr
 
 	private Space_control controls;
 	public bool has_control = true;
+	public bool isOnRope = false;
 
 	public AudioSource audio;
 
@@ -69,8 +72,11 @@ public class playerPlatformController : MonoBehaviour, Space_control.ISpaceContr
 	{
 		if (!has_control) return;
 		horizontal = context.ReadValue<Vector2>().x;
+		vertical = context.ReadValue<Vector2>().y;
 		
-		if (context.ReadValue<Vector2>().y > 0)
+		if (isOnRope)
+			rb.velocity = new Vector2(horizontal * speed, vertical * speed);
+		else if (context.ReadValue<Vector2>().y > 0)
 		{
 			OnDash(context);
 		}
@@ -79,6 +85,7 @@ public class playerPlatformController : MonoBehaviour, Space_control.ISpaceContr
 	public void OnDash(InputAction.CallbackContext context)
 	{
 		if (!has_control) return;
+		if (isOnRope) return;
 		if (context.performed && IsGrounded())
 		{
 			rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
@@ -104,6 +111,16 @@ public class playerPlatformController : MonoBehaviour, Space_control.ISpaceContr
 	public void Bump()
 	{
 		rb.velocity = new Vector2(rb.velocity.x, bumpingPower);
+	}
+
+	public void UseRope() {
+		isOnRope = true;
+		rb.gravityScale = 0;
+	}
+	
+	public void RopeEnd() {
+		isOnRope = false;
+		rb.gravityScale = 2;
 	}
 
 	public void OnDestroy()
