@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class RuneClueTrigger: MonoBehaviour
 {
-	public GameObject UiRunePanel;
+	public RuneClueUI UiRunePanel;
 	public ComicsPrompter comText;
 	public List<runes> runes = new List<runes>();
 	public string charater_reaction;
@@ -20,7 +20,7 @@ public class RuneClueTrigger: MonoBehaviour
 			triggered = true;
 			StartCoroutine(display_com());
 		}
-		UiRunePanel.SetActive(true);
+		UiRunePanel.show();
 	}
 
 	private IEnumerator display_com()
@@ -33,6 +33,6 @@ public class RuneClueTrigger: MonoBehaviour
 	private void OnTriggerExit2D(Collider2D other)
 	{
 		if (!other.CompareTag("Player")) return;
-			UiRunePanel.SetActive(false);
+		UiRunePanel.hide();
 	}
 }

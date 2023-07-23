@@ -9,10 +9,14 @@ public class ping : MonoBehaviour
 
     public SpriteRenderer sprite;
     private bool fade = true;
+
+    public bool visible = false;
     
     // Update is called once per frame
     void Update()
     {
+        if (!visible) return;
+        
         float rotation = Mathf.Deg2Rad * player.rotation.eulerAngles.z;
         Vector2 direction = planete.transform.position - player.position;
 

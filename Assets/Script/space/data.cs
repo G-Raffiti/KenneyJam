@@ -1,17 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Resources;
 using UnityEngine;
-
-
-public enum runes
-{
-    sound_plus,
-    sound_minus,
-    speed_plus,
-    speed_minus,
-    radar_test,
-}
 
 public class data : MonoBehaviour
 {
@@ -58,5 +47,32 @@ public class data : MonoBehaviour
     public void addRunes(List<runes> _runes)
     {
         runes.AddRange(_runes);
+    }
+    
+    
+    // save and load button state
+    
+    public float bg_music_volume = 1;
+    public float player_max_speed = 100;
+    public bool ping_visible = false;
+    public float player_rot_speed = 25;
+    public float camera_zoom = 7;
+
+    public void LoadRuneState(BtnHub _btn_hub)
+    {
+        _btn_hub.bg_music.volume = bg_music_volume;
+        _btn_hub.player.maxSpeed = player_max_speed;
+        _btn_hub.ping.visible = ping_visible;
+        _btn_hub.player.rotationSpeed = player_rot_speed;
+        _btn_hub.camera.orthographicSize = camera_zoom;
+    }
+
+    public void SaveRuneState(BtnHub _btn_hub)
+    {
+        bg_music_volume = _btn_hub.bg_music.volume;
+        player_max_speed = _btn_hub.player.maxSpeed;
+        ping_visible = _btn_hub.ping.visible;
+        player_rot_speed = _btn_hub.player.rotationSpeed;
+        camera_zoom = _btn_hub.camera.orthographicSize;
     }
 }

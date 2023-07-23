@@ -14,7 +14,7 @@ public class ComicsPrompter :MonoBehaviour
 	{
 		string txt = "";
 		int letters = 1;
-		while (letters < _charater_reaction.Length)
+		while (letters <= _charater_reaction.Length)
 		{
 			txt = _charater_reaction.Substring(0, letters);
 			text.text = txt;
