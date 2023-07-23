@@ -35,7 +35,7 @@ public class tp : MonoBehaviour
 	IEnumerator beem_anim()
 	{
 		yield return new WaitForSeconds(1.5f);
-		CodeParts.Instance.AddClue(data.Instance.runes[Random.Range(0, 11)]);
+		CodeParts.Instance.AddClue(data.Instance.all_runes[Random.Range(0, 11)]);
 		SceneManager.LoadScene("Space");
 	}
 }
