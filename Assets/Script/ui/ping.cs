@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ping : MonoBehaviour
@@ -11,19 +9,24 @@ public class ping : MonoBehaviour
 
     public SpriteRenderer sprite;
     private bool fade = true;
+
+    public bool visible = false;
+    public Camera camera_ref;
     
     // Update is called once per frame
     void Update()
     {
+        if (!visible) return;
+        
         float rotation = Mathf.Deg2Rad * player.rotation.eulerAngles.z;
         Vector2 direction = planete.transform.position - player.position;
 
         direction = Rotate(direction, -rotation);
         float factor = 1;
         if (Math.Abs(direction.y) > Math.Abs(direction.x))
-            factor = 7 / Math.Abs(direction.y);
+            factor = camera_ref.orthographicSize / Math.Abs(direction.y);
         else
-            factor = 12 / Math.Abs(direction.x);
+            factor = (camera_ref.orthographicSize * 9) / Mathf.Max(0.05f,  16 * Math.Abs(direction.x));
         transform.localPosition = direction * factor;
 
         Color color = sprite.color;

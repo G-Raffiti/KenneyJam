@@ -8,12 +8,17 @@ public class asteroid : MonoBehaviour
 	public SpriteRenderer sprite;
 	public bool is_special = false;
 	public float lifeTime = 10;
+	public AudioSource audio;
 
 	public void launch(Vector3 destination)
 	{
 		if (is_special)
 			sprite.color = Color.green;
-			
+		else
+		{
+			sprite.color = new Color(0.6f, 0.4f, 0.25f);
+		}
+		transform.localScale *= Random.Range(0.8f, 3);
 		rb.velocity = (Vector2)(destination - transform.position).normalized * Random.Range(2, 10);
 	}
 
@@ -22,5 +27,10 @@ public class asteroid : MonoBehaviour
 		lifeTime -= Time.deltaTime;
 		if (lifeTime < 0)
 			Destroy(this);
+	}
+
+	private void OnCollisionEnter(Collision other)
+	{
+		audio.Play();
 	}
 }

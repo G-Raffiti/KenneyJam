@@ -8,6 +8,12 @@ public class planete : MonoBehaviour
 
     public GameObject pivotObject;
     public string planete_scene_name = "";
+    public GameObject space;
+
+    private void Start()
+    {
+        data.Instance.Load(gameObject);
+    }
 
     // Update is called once per frame
     void Update()
@@ -18,7 +24,9 @@ public class planete : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (data.Instance.visited.Contains(this.name))
+            return;
+        if (!other.CompareTag("Player")) return;
             OpenScenePlanete();
     }
 
@@ -26,6 +34,12 @@ public class planete : MonoBehaviour
     {
         if (planete_scene_name == "")
             return;
-        SceneManager.LoadScene(planete_scene_name, LoadSceneMode.Additive);
+        data.Instance.SaveVisited(name);
+        SceneManager.LoadScene(planete_scene_name);
+    }
+
+    private void OnDestroy()
+    {
+        data.Instance.Save(gameObject);
     }
 }

@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -119,9 +119,791 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb8dcc0fcafb2141bf0d2fbbbd6e6bf
+      internalID: -1199801676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 360
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9afd62c85a2394b48bb02263e514e2f7
+      internalID: -1383984394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 360
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995c07ec0e4f05f41be6471f4be484d9
+      internalID: -1197874780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 360
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ee2d0f88a11fe49b307a96c2d4d373
+      internalID: 638728366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 360
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cce01c8c2d00565478bd1c3243711c5c
+      internalID: -559580087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 360
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4a4e7e55007e4042bbe92b66197c4d9
+      internalID: -531893408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 360
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628cdc9b1e722be4e917b34e47efad95
+      internalID: -1178741299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 360
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd43e60319ef1db4a90eaca213ddcb13
+      internalID: 282685425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 270
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4625ec3a3320bdb4e8a26b90de32ee07
+      internalID: -964954340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 270
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07fe3cf14cdcec343b5687678d5efb6d
+      internalID: 240016947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 270
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 600e4a6fea8b23347a7c3dae8325575e
+      internalID: 1061631395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 270
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e8367e86e244304297d2a815f775a72
+      internalID: 353983065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 270
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 087fe28d40d7c994697a9e37edcb8b0d
+      internalID: -622417052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 270
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2345b939c8b2cfc4abf473fda2db1bbb
+      internalID: 1511629646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 270
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7415378844c78c14981fe3bef6e0851e
+      internalID: -1260913795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 180
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 845d382740d63ac429e1efc7277fc76f
+      internalID: -1278195932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 180
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf7c96ad8f8c6214cb9b4c6994c76752
+      internalID: 1428832562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 180
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 911da158915597b4cafd5ffc9d8d1d2c
+      internalID: -1561109927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 180
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95279e37f4b7926408937d277e3700f6
+      internalID: 216437181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 180
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a854bde9ac45c5245b250124431ccd4d
+      internalID: -220793011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 180
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250d05a0a4c2b9e42b8a72c7d0ed843c
+      internalID: 2082408487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 180
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f7680901f5ce6a4cae8dbe5084c5621
+      internalID: -1878019792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 90
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f6d0eb8bff2a4b4c96eb85e7ccc7aa0
+      internalID: 1177886340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 90
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4423933367c7c54ba6c65ec3fea1c48
+      internalID: -1123938997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 90
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b399d34e579274c877dfc579b489b2
+      internalID: 1438532728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 90
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894f1ca3541ee8e4ca7d844e9d4fbd9b
+      internalID: 704447528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 90
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd6cf929730b044dbb37a5715705fe6
+      internalID: -838616728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 90
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6043a654c2bb4a418f23042aab6ed13
+      internalID: -577465374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 90
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ad8394a28b16845aaeca45764fbf9a
+      internalID: 1076468532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cab902f4f60ac44b8561994b15a72e8
+      internalID: -667132448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_30
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6229970443c1c0c4395ee9f26160898d
+      internalID: 1376406811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_31
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 0
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd8a514d8a1cee4ca1bae07cb7912c6
+      internalID: 1951669753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_32
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 0
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acc1bcf416d38df459f5f16952919538
+      internalID: 1921375119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_33
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f4c74ddce1ef04d966ce09a59e0aec
+      internalID: -793650985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_34
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 0
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f17ae73aa6f70d4eacc45652e264381
+      internalID: -419983893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runeBlack_rectangleOutline_sheet_35
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 0
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4035f3714bfa57642897b289e9a52eab
+      internalID: -1431903612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +914,43 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      runeBlack_rectangleOutline_sheet_0: -1199801676
+      runeBlack_rectangleOutline_sheet_1: -1383984394
+      runeBlack_rectangleOutline_sheet_10: 1061631395
+      runeBlack_rectangleOutline_sheet_11: 353983065
+      runeBlack_rectangleOutline_sheet_12: -622417052
+      runeBlack_rectangleOutline_sheet_13: 1511629646
+      runeBlack_rectangleOutline_sheet_14: -1260913795
+      runeBlack_rectangleOutline_sheet_15: -1278195932
+      runeBlack_rectangleOutline_sheet_16: 1428832562
+      runeBlack_rectangleOutline_sheet_17: -1561109927
+      runeBlack_rectangleOutline_sheet_18: 216437181
+      runeBlack_rectangleOutline_sheet_19: -220793011
+      runeBlack_rectangleOutline_sheet_2: -1197874780
+      runeBlack_rectangleOutline_sheet_20: 2082408487
+      runeBlack_rectangleOutline_sheet_21: -1878019792
+      runeBlack_rectangleOutline_sheet_22: 1177886340
+      runeBlack_rectangleOutline_sheet_23: -1123938997
+      runeBlack_rectangleOutline_sheet_24: 1438532728
+      runeBlack_rectangleOutline_sheet_25: 704447528
+      runeBlack_rectangleOutline_sheet_26: -838616728
+      runeBlack_rectangleOutline_sheet_27: -577465374
+      runeBlack_rectangleOutline_sheet_28: 1076468532
+      runeBlack_rectangleOutline_sheet_29: -667132448
+      runeBlack_rectangleOutline_sheet_3: 638728366
+      runeBlack_rectangleOutline_sheet_30: 1376406811
+      runeBlack_rectangleOutline_sheet_31: 1951669753
+      runeBlack_rectangleOutline_sheet_32: 1921375119
+      runeBlack_rectangleOutline_sheet_33: -793650985
+      runeBlack_rectangleOutline_sheet_34: -419983893
+      runeBlack_rectangleOutline_sheet_35: -1431903612
+      runeBlack_rectangleOutline_sheet_4: -559580087
+      runeBlack_rectangleOutline_sheet_5: -531893408
+      runeBlack_rectangleOutline_sheet_6: -1178741299
+      runeBlack_rectangleOutline_sheet_7: 282685425
+      runeBlack_rectangleOutline_sheet_8: -964954340
+      runeBlack_rectangleOutline_sheet_9: 240016947
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

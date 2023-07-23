@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using Random = UnityEngine.Random;
 
 namespace Script.space
@@ -8,6 +9,7 @@ namespace Script.space
 		public asteroid prefab;
 		public GameObject planete_asteroid;
 		public Transform parent;
+		public List<Sprite> variants;
 
 		private float cooldown = -1;
 		
@@ -28,6 +30,8 @@ namespace Script.space
 						Quaternion.identity, parent);
 					asteroid.is_special = true;
 				}
+
+				asteroid.sprite.sprite = variants[Random.Range(0, variants.Count)];
 				asteroid.launch(transform.position);
 			}
 		}
