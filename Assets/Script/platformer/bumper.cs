@@ -5,7 +5,6 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 public class bumper : MonoBehaviour
 {
-    public TilemapCollider2D collider;
     public playerPlatformController player;
 
     private void OnTriggerEnter2D(Collider2D other)

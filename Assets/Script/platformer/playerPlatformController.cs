@@ -1,4 +1,5 @@
 ﻿
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -97,5 +98,10 @@ public class playerPlatformController : MonoBehaviour, Space_control.ISpaceContr
 	public void Bump()
 	{
 		rb.velocity = new Vector2(rb.velocity.x, bumpingPower);
+	}
+
+	public void OnDestroy()
+	{
+		controls.SpaceControl.RemoveCallbacks(this);
 	}
 }
