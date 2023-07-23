@@ -24,10 +24,10 @@ public class ping : MonoBehaviour
         direction = Rotate(direction, -rotation);
         float factor = 1;
         if (Math.Abs(direction.y) > Math.Abs(direction.x))
-            factor = camera_ref.orthographicSize / Math.Abs(direction.y);
+            factor = 6 / Math.Abs(direction.y);
         else
-            factor = (camera_ref.orthographicSize * 9) / Mathf.Max(0.05f,  16 * Math.Abs(direction.x));
-        transform.localPosition = direction * factor;
+            factor = 10 / Math.Abs(direction.x);
+        transform.localPosition = new Vector3((direction * factor).x, (direction * factor).y, 10) ;
 
         Color color = sprite.color;
         

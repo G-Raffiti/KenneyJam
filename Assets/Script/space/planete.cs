@@ -8,8 +8,7 @@ public class planete : MonoBehaviour
 
     public GameObject pivotObject;
     public string planete_scene_name = "";
-    public GameObject space;
-
+    
     private void Start()
     {
         data.Instance.Load(gameObject);

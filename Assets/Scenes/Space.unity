@@ -204,14 +204,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 24007664}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 268.1, y: -273.07, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.9230672, w: -0.38463873}
+  m_LocalPosition: {x: 420.1, y: -15.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 660340537}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -225.243}
 --- !u!114 &24007668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,13 +282,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 24007669}
-  moveSpeed: 0
+  moveSpeed: 70
   rotationSpeed: 50
   dashTime: 3
   dashSpeed: 3
   dashCDTime: 6
-  normalspeed: 70
-  maxSpeed: 70
+  normalspeed: 25
+  maxSpeed: 25
 --- !u!58 &24007671
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1259,7 +1259,6 @@ MonoBehaviour:
   rotaionSpeedSelf: 8
   pivotObject: {fileID: 444294370}
   planete_scene_name: 
-  space: {fileID: 0}
 --- !u!58 &403656051
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2185,7 +2184,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 719196141}
-  - {fileID: 710212535}
+  - {fileID: 1605390952}
   m_Father: {fileID: 24007666}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &660340538
@@ -2345,108 +2344,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3bff86b90974f869c6ae5531edfa767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &710212534
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 710212535}
-  - component: {fileID: 710212536}
-  - component: {fileID: 710212537}
-  m_Layer: 3
-  m_Name: Ping
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &710212535
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 710212534}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 660340537}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &710212536
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 710212534}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5dacac3797977e941bad2d6e472422ff, type: 3}
-  m_Color: {r: 0.8257476, g: 1, b: 0, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!114 &710212537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 710212534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4e110a74dcdf604f8f44b1498d311c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  planete: {fileID: 858951597}
-  player: {fileID: 24007666}
-  sprite: {fileID: 710212536}
-  visible: 0
-  camera_ref: {fileID: 660340536}
 --- !u!1 &719196140
 GameObject:
   m_ObjectHideFlags: 0
@@ -2494,6 +2391,17 @@ MonoBehaviour:
   prefab: {fileID: 7881751793340052237, guid: 59774c822f55c3f4c92d05840c681e51, type: 3}
   planete_asteroid: {fileID: 2122645541}
   parent: {fileID: 656979699}
+  variants:
+  - {fileID: 21300000, guid: c0d82f5443cdf1843b9c4bbaf3df9eea, type: 3}
+  - {fileID: 21300000, guid: 7eafd76687ab6b14da219850284b3856, type: 3}
+  - {fileID: 21300000, guid: 60a5e9f7ee2b06744af8121344e34500, type: 3}
+  - {fileID: 21300000, guid: 0128c0184a1a4a746904d116fa0bc8fe, type: 3}
+  - {fileID: 21300000, guid: d9dba09086da3ea47b215f91d8688423, type: 3}
+  - {fileID: 21300000, guid: 69ed4ca45a7889a429797dcc9ec90507, type: 3}
+  - {fileID: 21300000, guid: 49d29c0cdccc94f4fb31bbede07c88e3, type: 3}
+  - {fileID: 21300000, guid: 8f94b570340ff1d45abbba50a1fff714, type: 3}
+  - {fileID: 21300000, guid: 44248029cf6b3e74a8ae00ce88e0a133, type: 3}
+  - {fileID: 21300000, guid: 5399bce97a3fc114ab29f3e15deeff0c, type: 3}
 --- !u!1 &755199193
 GameObject:
   m_ObjectHideFlags: 0
@@ -2990,7 +2898,6 @@ MonoBehaviour:
   rotaionSpeedSelf: 10
   pivotObject: {fileID: 444294370}
   planete_scene_name: 
-  space: {fileID: 0}
 --- !u!58 &805374241
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3247,7 +3154,7 @@ GameObject:
   - component: {fileID: 858951598}
   - component: {fileID: 858951597}
   m_Layer: 7
-  m_Name: Indus
+  m_Name: Nature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3268,8 +3175,7 @@ MonoBehaviour:
   rotaionSpeed: 7
   rotaionSpeedSelf: 10
   pivotObject: {fileID: 444294370}
-  planete_scene_name: PlaneteIndus
-  space: {fileID: 0}
+  planete_scene_name: PlaneteNature
 --- !u!58 &858951598
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6114,7 +6020,7 @@ GameObject:
   - component: {fileID: 1362371647}
   - component: {fileID: 1362371652}
   m_Layer: 0
-  m_Name: planet00 (2)
+  m_Name: Indus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6135,8 +6041,7 @@ MonoBehaviour:
   rotaionSpeed: -3
   rotaionSpeedSelf: 10
   pivotObject: {fileID: 444294370}
-  planete_scene_name: 
-  space: {fileID: 0}
+  planete_scene_name: PlaneteIndus
 --- !u!58 &1362371648
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7162,11 +7067,113 @@ MonoBehaviour:
   - {fileID: 2076879507}
   - {fileID: 1149235689}
   - {fileID: 1918448338}
-  code: 0a00000006000000010000000900000008000000
+  code: 0a000000060000000100000008000000
   bg_music: {fileID: 1165030148}
-  ping: {fileID: 710212537}
+  ping: {fileID: 1605390953}
   player: {fileID: 24007670}
   camera: {fileID: 660340536}
+--- !u!1 &1605390951
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1605390952}
+  - component: {fileID: 1605390954}
+  - component: {fileID: 1605390953}
+  m_Layer: 3
+  m_Name: Ping
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1605390952
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605390951}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 100}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 660340537}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1605390953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605390951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4e110a74dcdf604f8f44b1498d311c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planete: {fileID: 1362371647}
+  player: {fileID: 24007666}
+  sprite: {fileID: 1605390954}
+  visible: 1
+  camera_ref: {fileID: 660340536}
+--- !u!212 &1605390954
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605390951}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1000
+  m_Sprite: {fileID: 21300000, guid: 732fcca489fc4674ab28620ba026c64d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1621510493
 GameObject:
   m_ObjectHideFlags: 0
@@ -7437,7 +7444,6 @@ MonoBehaviour:
   rotaionSpeedSelf: 10
   pivotObject: {fileID: 444294370}
   planete_scene_name: 
-  space: {fileID: 0}
 --- !u!58 &1729064693
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8575,7 +8581,6 @@ MonoBehaviour:
   rotaionSpeedSelf: 10
   pivotObject: {fileID: 444294370}
   planete_scene_name: 
-  space: {fileID: 0}
 --- !u!58 &2122645543
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8801,6 +8806,14 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 24007670}
+    - target: {fileID: 371548746344386174, guid: 743d4a1a4980f5a4099c8a0f33bb3611, type: 3}
+      propertyPath: player_max_speed
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 371548746344386174, guid: 743d4a1a4980f5a4099c8a0f33bb3611, type: 3}
+      propertyPath: player_rot_speed
+      value: -100
+      objectReference: {fileID: 0}
     - target: {fileID: 371548746344386174, guid: 743d4a1a4980f5a4099c8a0f33bb3611, type: 3}
       propertyPath: planetes.Array.data[0]
       value: 
