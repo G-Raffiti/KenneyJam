@@ -1,20 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UICodeParts : MonoBehaviour
 {
-    public List<Sprite> imgs;
-    public Sprite defaultImg;
+    public List<Image> imgs;
     
     // Start is called before the first frame update
     void Start()
     {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        for (int i = 0; i < CodeParts.Instance.codeParts.Count + 1; i++)
+        {
+            imgs[i].sprite = data.Instance.runes_imgs[CodeParts.Instance.codeParts[i]];
+        }
     }
 }
