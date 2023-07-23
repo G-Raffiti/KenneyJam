@@ -1,19 +1,20 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
 
 public class tp : MonoBehaviour
 {
 	private GameObject player;
 	private Rigidbody2D rb_player;
 	public SpriteRenderer beem;
+	public AudioSource audio;
+	public audiofade ambiance;
 	private void OnTriggerEnter2D(Collider2D other)
 	{
 		if (!other.CompareTag("Player")) return;
-		Debug.Log("end level triggered");
+		ambiance.Fade_to(0);
 		beem.enabled = true;
+		audio.Play();
 		player = other.gameObject;
 		rb_player = player.GetComponent<Rigidbody2D>();
 		rb_player.gravityScale = -0.2f;

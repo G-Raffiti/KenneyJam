@@ -24,8 +24,9 @@ public class planete : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("planete triggered " + planete_scene_name + other.CompareTag("Player"));
-        if (other.CompareTag("Player"))
+        if (data.Instance.visited.Contains(this.name))
+            return;
+        if (!other.CompareTag("Player")) return;
             OpenScenePlanete();
     }
 
