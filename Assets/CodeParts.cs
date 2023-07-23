@@ -21,4 +21,9 @@ public class CodeParts : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }
+
+    public void AddClue(runes rune)
+    {
+        
+    }
 }
