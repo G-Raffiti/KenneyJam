@@ -23,4 +23,6 @@ public class asteroid : MonoBehaviour
 		if (lifeTime < 0)
 			Destroy(this);
 	}
+	
+	
 }
