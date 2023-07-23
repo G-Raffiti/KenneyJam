@@ -9,6 +9,7 @@ using UnityEngine.UI;
 
 public enum runes
 {
+	none,
 	sound_plus,
 	sound_minus,
 	speed_plus,
