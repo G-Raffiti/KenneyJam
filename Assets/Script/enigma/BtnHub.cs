@@ -9,7 +9,6 @@ using UnityEngine.UI;
 
 public enum runes
 {
-	none,
 	sound_plus,
 	sound_minus,
 	speed_plus,
@@ -146,6 +145,7 @@ public class BtnHub:MonoBehaviour
 		if (try_code.Count != 5)
 		{
 			value.text = "wrong destination";
+			code_mode = false;
 			return;
 		}
 		
@@ -154,6 +154,7 @@ public class BtnHub:MonoBehaviour
 			if (try_code[i] != code[i])
 			{
 				value.text = "wrong destination";
+				code_mode = false;
 				return;
 			}
 		}

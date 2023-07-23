@@ -10,11 +10,6 @@ public class UICodeParts : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        foreach (runes rune in CodeParts.Instance.codeParts)
-        {
-            Sprite img = defaultImg;
-            data.Instance.runes_imgs.TryGetValue(rune, out img);
-        }
     }
 
     // Update is called once per frame

@@ -7,7 +7,6 @@ using UnityEngine.Tilemaps;
 public class rope : MonoBehaviour
 {
     public playerPlatformController player;
-    public AudioSource audio;
     
     
     private void OnTriggerEnter2D(Collider2D other)

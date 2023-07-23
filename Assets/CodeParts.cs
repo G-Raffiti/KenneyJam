@@ -9,8 +9,6 @@ public class CodeParts : MonoBehaviour
 
 
 
-    public runes[] codeParts =
-        { runes.none, runes.none, runes.none, runes.none };
     
     
     void Awake()
@@ -22,10 +20,5 @@ public class CodeParts : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(gameObject);
-    }
-
-    public void AddClue(int i, runes rune)
-    {
-        codeParts[i] = rune;
     }
 }
