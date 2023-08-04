@@ -32,7 +32,6 @@ public class BtnHub:MonoBehaviour
 	public List<RuneButton> btns;
 
 	private bool code_mode = false;
-	public List<runes> code = new List<runes>();
 	private List<runes> try_code = new List<runes>();
 
 	[Header("Dependencies")]
@@ -149,9 +148,9 @@ public class BtnHub:MonoBehaviour
 			return;
 		}
 		
-		for (int i = 0 ; i < 5; ++i)
+		for (int i = 0 ; i < 3; ++i)
 		{
-			if (try_code[i] != code[i])
+			if (try_code[i] != data.Instance.code[i])
 			{
 				value.text = "wrong destination";
 				code_mode = false;

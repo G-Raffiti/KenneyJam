@@ -76,4 +76,15 @@ public class data : MonoBehaviour
         player_rot_speed = _btn_hub.player.rotationSpeed;
         camera_zoom = _btn_hub.camera == null ? 7: _btn_hub.camera.orthographicSize;
     }
+    
+    //clues
+    private List<string> scene_names = new List<string>();
+    public List<runes> code = new List<runes>();
+    public List<runes> clueFounded = new List<runes>();
+    public void RevealClue(string scene_name)
+    {
+        if (scene_names.Contains(scene_name)) return;
+        scene_names.Add(scene_name);
+        clueFounded.Add(code[clueFounded.Count]);
+    }
 }

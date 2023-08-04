@@ -10,9 +10,9 @@ public class UICodeParts : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < CodeParts.Instance.codeParts.Count - 1; i++)
+        for (int i = 0; i < data.Instance.clueFounded.Count; i++)
         {
-            imgs[i].sprite = data.Instance.runes_imgs[CodeParts.Instance.codeParts[i]];
+            imgs[i].sprite = data.Instance.runes_imgs[data.Instance.clueFounded[i]];
         }
     }
 }
